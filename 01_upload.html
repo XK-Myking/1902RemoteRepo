@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- 相关属性设定 
+	form 
+
+	   action  提交对象,目前为php程序
+	   method  提交方式,post
+	   enctype 提交编码格式
+	           multipart/form-data
+
+	input 
+
+	   type    file
+	   name    设定属性值
+	           如果是多个文件,属性值要添加[]
+
+
+
+	-->
+
+	<form action="01_upload.php" method="post" enctype="multipart/form-data">
+		文件:<input type="file" name="file"><br>
+		<button>上传</button>
+	</form>
+</body>
+</html>
